@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Андрей Берлин</title>
+
+
+    <!--link rel="stylesheet" href="style1.css"-->
+
+    <style>
+            header {
+            text-align: center;
+            }
+	    
+	    iframe {
+             border: 1px solid black;
+             width: 100%;
+            }
+
+            .output {
+             background: #eee;
+            }
+     section {
+
+     text-align: center;
+
+      }
+      
+      
+        
+        ul {
+            /*background: #0b0b35;*/
+          /*  width: 300px;*/
+            /*height: 300px;*/
+            text-align: center;
+            /*padding-left: 500px;*/
+            /*padding-right: 300px;*/
+            font-size: 30px;
+           /* margin: 1% auto;*/
+            color: #04020c;
+        }
+        
+        li {
+          width: 300px;
+            /*height: 300px;*/
+           text-align: left;
+           font-size: 20px;
+           margin: 1% auto;
+           color:#130741;
+          
+        }
+        
+        #timedate {
+            font: 30px "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+            text-align: center;
+            width: 50%;
+            margin: 50px auto;
+            color: #030303;
+            /* border: 5px solid #ed1f24;
+       padding: 5px;*/
+    </style>
+
+</head>
+
+<body onLoad="initClock()">
+<!-- partial:index.partial.html -->
+<header>
+
+    <h1>Личная Страница Андрея Берлина в сети</h1>
+    <h2>Добро пожаловать, дорогие друзья!</h2>
+
+
+
+        
+
+
+    <div id="timedate">
+        <a id="mon">Января</a>
+        <a id="d">1</a>,
+        <a id="y">0</a><br />
+        <a id="h">12</a> :
+        <a id="m">00</a> :
+        <a id="s">00</a>
+        <a id="mi">000</a>
+    </div>
+	
+
+<section>
+
+<ul>Несколько слов о себе...  
+<li>Я изучаю Front-end и Back-end. Я уже знаю основу Html, Css и JavaScript + Node.js. В моем изучении очень помогают мне интернет ресурсы такие как : https://www.w3schools.com и https://developer.mozilla.org/en-US/.</li>
+<li>Я придумываю свои приложения, а также редактирую коды других разработчиков под свои идеи.</li>
+</ul>  
+<ul>Список моих проектов:
+
+<li id = "link">Postyk - веб  приложение для создания постов. Нажмите, чтобы посмотреть:▶️.
+</li>
+</ul>
+</section>
+  
+  
+
+
+        
+<footer>
+  
+
+   
+
+    <!--h2 id="novosty">Новости проекта:</h2>
+
+        <a class="twitter-timeline" href="https://twitter.com/andrewberlin96?ref_src=twsrc%5Etfw">
+
+            Tweets by andrewberlin96</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script-->
+
+
+   <p>С уважением, Берлин Андрей.</p>
+   <p>©2022-2025</p>
+</footer>
+<!-- partial -->
+<!--script src="script1.js"></script-->
+
+
+
+</body>
+<script>
+
+let link=document.getElementById('link');
+      link.onclick= () => {
+  document.location.href = "https://andrey-berlin.github.io/Postyk/";
+}
+    // START CLOCK SCRIPT
+
+    Number.prototype.pad = function(n) {
+        for (var r = this.toString(); r.length < n; r = 0 + r);
+        return r;
+    };
+
+    function updateClock() {
+        var now = new Date();
+        /*  var milli = now.getMilliseconds(),*/
+        let sec = now.getSeconds(),
+            min = now.getMinutes(),
+            hou = now.getHours(),
+            mo = now.getMonth(),
+            dy = now.getDate(),
+            yr = now.getFullYear();
+        var months = ["Января", "Февраля", "Марта", "Апреля", "Майя", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+        var tags = ["d", "mon", "y", "h", "m", "s", "mi"],
+            corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2)];
+        for (var i = 0; i < tags.length; i++)
+            document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+    }
+
+    function initClock() {
+        updateClock();
+        window.setInterval("updateClock()", 1);
+    }
+
+    // END CLOCK SCRIPT
+</script>
+
+</html>
