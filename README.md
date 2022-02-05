@@ -11,6 +11,11 @@
 #Список моих проектов:
 
 Postyk - веб приложение для создания постов. Нажмите, чтобы посмотреть:▶️ https://andrey-berlin.github.io/Postyk/.
+  <ol>Postyk:
+      <li>Версия:<a href="https://andrey-berlin.github.io/Postyk/"> 0.1</a></li>
+      <li>Версия:<a href="https://andrey-berlin.github.io/Postyk-0.2/"> 0.2</a></li>
+      <li>Версия:<a href="https://andrey-berlin.github.io/Postyk-0.3/"> 0.3</a></li>
+  </ol>
 
 С уважением, Берлин Андрей!
 
