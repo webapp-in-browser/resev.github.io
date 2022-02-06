@@ -207,14 +207,14 @@
         
 
 
-    <div id="timedate">
-        <a id="mon">Января</a>
-        <a id="d">1</a>,
-        <a id="y">0</a><br />
-        <a id="h">12</a> :
-        <a id="m">00</a> :
-        <a id="s">00</a>
-        <a id="mi">000</a>
+     <div id="timedate">Сегодня:
+      <a id = "god">год</a>,
+      <a id ="mes"></a>:
+      <a id="cheslo mes"></a>,
+      <a id="den ned"></a>
+      <a id="chas"></a>:
+      <a id="min"></a>:
+      <a id="sek"></a>.
     </div>
 	
 
@@ -381,27 +381,30 @@ let link=document.getElementById('link');
 }
     // START CLOCK SCRIPT
 
-    Number.prototype.pad = function(n) {
-        for (var r = this.toString(); r.length < n; r = 0 + r);
-        return r;
-    };
-
     function updateClock() {
-        var now = new Date();
-        /*  var milli = now.getMilliseconds(),*/
-        let sec = now.getSeconds(),
-            min = now.getMinutes(),
-            hou = now.getHours(),
-            mo = now.getMonth(),
-            dy = now.getDate(),
-            yr = now.getFullYear();
-        var months = ["Января", "Февраля", "Марта", "Апреля", "Майя", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-        var tags = ["d", "mon", "y", "h", "m", "s", "mi"],
-            corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2)];
-        for (var i = 0; i < tags.length; i++)
-            document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+     const d = new Date();
+     let god = document.getElementById("god");
+     god.innerHTML = d.getFullYear() + " год";
+     
+     const months = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+     let month = months[d.getMonth()];
+     let mes = document.getElementById("mes");
+     mes.innerHTML = month;
+     let cheslo = document.getElementById("cheslo mes");
+     cheslo.innerHTML = d.getDate();
+     const days = ["Вс.","Пн.","Вт.","Ср.","Чт.","Пт.","Суб."];
+     let day = days[d.getDay()];
+     let den = document.getElementById("den ned");
+     den.innerHTML = day;
+     let chas = document.getElementById("chas");
+     chas.innerHTML = d.getHours();
+     let min = document.getElementById("min");
+     min.innerHTML = d.getMinutes();
+     let sek = document.getElementById("sek");
+     sek.innerHTML = d.getSeconds();
+     
+     
     }
-
     function initClock() {
         updateClock();
         window.setInterval("updateClock()", 1);
