@@ -209,8 +209,8 @@
 
      <div id="timedate">Сегодня:
       <a id = "god">год</a>,
-      <a id ="mes"></a>:
       <a id="cheslo mes"></a>,
+      <a id ="mes"></a>,
       <a id="den ned"></a>,
       <a id="chas"></a>:
       <a id="min"></a>:
@@ -386,7 +386,7 @@ let link=document.getElementById('link');
      let god = document.getElementById("god");
      god.innerHTML = d.getFullYear() + " год";
      
-     const months = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+     const months = ["Января","Февраля","Марта","Апреля","Мая","Июня","Июля","Августа","Сентября","Октября","Ноября","Декабря"];
      let month = months[d.getMonth()];
      let mes = document.getElementById("mes");
      mes.innerHTML = month;
