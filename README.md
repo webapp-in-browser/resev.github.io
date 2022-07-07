@@ -1,23 +1,21 @@
-# Andrey-Berlin.github.io
-Личная Страница Андрея Берлина в сети
+#Andrey-Berlin.github.io
 
-Добро пожаловать, дорогие друзья!
+I love programming for the web.
 
-#Несколько слов о себе...
+#What am I doing?:
+<ol>
+      <li>I write libraries in .js</li>
+      <li>I create applications for Android on c # + js</li>
+</ol>
 
-Я изучаю Front-end и Back-end. Я уже знаю основу Html, Css и JavaScript + Node.js. В моем изучении очень помогают мне интернет ресурсы такие как : https://www.w3schools.com и https://developer.mozilla.org/en-US/.
-Я придумываю свои приложения, а также редактирую коды других разработчиков под свои идеи.
 
-#Список моих проектов:
 
-Postyk - веб приложение для создания постов. Нажмите, чтобы посмотреть:▶️ https://andrey-berlin.github.io/Postyk/.
-  <ol>Postyk:
+<!--ol>Postyk:
       <li>Версия:<a href="https://andrey-berlin.github.io/Postyk/"> 0.1</a></li>
       <li>Версия:<a href="https://andrey-berlin.github.io/Postyk-0.2/"> 0.2</a></li>
       <li>Версия:<a href="https://andrey-berlin.github.io/Postyk-0.3/"> 0.3</a></li>
-  </ol>
+  </ol-->
 
-С уважением, Берлин Андрей!
-
+Sincerely, Andrey Berlin!
 
 
