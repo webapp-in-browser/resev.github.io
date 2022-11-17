@@ -1,0 +1,107 @@
+body {
+
+
+background: #f0c7b7db;
+
+
+}
+
+
+
+header {
+
+color: #5d5b5b;
+
+font-family: Georgia, serif;
+
+text-align: center;
+
+
+}
+
+section {
+
+background: #ebe5e3db;
+
+
+}
+
+
+h2 {
+
+    color: #5d5b5b;
+
+    font-family: Georgia, serif;
+    
+    text-align: center;
+
+
+}
+
+ul {
+
+    font-size: 20px;
+
+    color: #1e1d1d;
+
+    font-family: Georgia, serif;
+
+    /*padding: 0 0 0 10%;*/
+
+    margin: 0 10% 0 10%;
+
+    background: #f3dfbddb;
+
+    
+
+
+
+
+}
+
+.radio_playlist
+{
+  width:100%;
+  height:calc(10%);
+  max-height: 50vh;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  
+}
+
+.radio_playlist::-webkit-scrollbar-track
+{
+  border: 1px solid black;
+  background-color: #17d76a;
+}
+.radio_playlist::-webkit-scrollbar
+{
+  width: 14px;
+  background-color: #643939;
+}
+
+.radio_playlist::-webkit-scrollbar-thumb
+{
+  background-color: #05344f;/*#000000*/
+}
+
+iframe {
+
+
+    margin: 0 10% 0 10%;
+
+    width: 80%;
+    height: 500px;
+
+
+}
+
+
+footer {
+    color:rgb(36, 36, 36);
+    background:#b4dad9;
+    text-align: center;
+    /*background-image: linear-gradient(#045d6d, #00ffea, rgb(5, 68, 104));*/
+    font-size: 18px;
+    
+  }
