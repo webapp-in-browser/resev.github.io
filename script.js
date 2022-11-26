@@ -33,3 +33,36 @@ for (let i = 0; i < click.length; i ++) {
       }
 
     }
+
+
+let mas = ['😀','😉','😏'];
+
+
+let myInterval = setInterval(myTimer, 1000);
+
+
+
+function myTimer() {
+
+    let ai3 = Math.floor(Math.random()*3)+0;
+
+    console.log(ai3);
+  
+    let timer = document.getElementById("timer").innerHTML = mas[`${ai3}`];
+
+    console.log(timer);
+  
+}
+
+
+
+
+    //clearInterval(myInterval);
+
+  
+
+
+
+/*function myStopFunction() {
+  clearInterval(myInterval);
+}*/
