@@ -66,3 +66,23 @@ function myTimer() {
 /*function myStopFunction() {
   clearInterval(myInterval);
 }*/
+
+function timer() {
+  
+  const interval_time = setInterval(clock, 1000);
+  
+  function clock() {
+    
+    const clock = new Date ();
+    
+   let date = document.getElementById("date");
+   date.innerHTML = clock.toLocaleDateString();
+   let timer1 = document.getElementById('timer1');
+   timer1.innerHTML = 
+    clock.toLocaleTimeString();
+    
+    
+  }
+  
+}
+timer();
