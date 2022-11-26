@@ -48,9 +48,9 @@ function myTimer() {
 
     console.log(ai3);
   
-    let timer = document.getElementById("timer").innerHTML = mas[`${ai3}`];
+    let timer1 = document.getElementById("timer1").innerHTML = mas[`${ai3}`];
 
-    console.log(timer);
+    console.log(timer1);
   
 }
 
@@ -77,8 +77,8 @@ function timer() {
     
    let date = document.getElementById("date");
    date.innerHTML = clock.toLocaleDateString();
-   let timer1 = document.getElementById('timer1');
-   timer1.innerHTML = 
+   let timer = document.getElementById('timer');
+   timer.innerHTML = 
     clock.toLocaleTimeString();
     
     
