@@ -22,6 +22,7 @@ text-align: center;
 section {
 
 background: #ebe5e3db;
+text-align: center;
 
 
 }
@@ -109,7 +110,7 @@ footer {
 
 
 
-p {
+#timer1 {
 
 font-size: 50px;
 
